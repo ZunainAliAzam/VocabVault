@@ -3,7 +3,7 @@ const path = require('path')
 const app = express()
 const port = 5500
 
-app.get('/', (req, res) =>{
+app.get('/searchword', (req, res) =>{
   console.log (path.join(__dirname, 'public'));
   return res.sendFile('public/index.html',{root: __dirname})
 });
